@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹접근성과 웹표준 폼 / 유효성 검사 (html5)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <div id="form">
+        <div class="container">
+            <h2 class="text-center title">상담신청</h2>
+            <p class="subtitle text-center">뇌새김 학습에 대한 궁금증을 해결해드립니다.</p>
+            <form action="http://www.naver.com" name="fm">
+                <div>
+                    <p class="subject">기본 정보</p>
+                    <ul class="formlist">
+                        <li class="before">
+                            <strong>영어 학습경험</strong>
+                            <p>
+                                <input type="checkbox" name="" id="study1"><label for="study1">영어</label>
+                                <input type="checkbox" name="" id="study2"><label for="study2">학원온라인</label>
+                                <input type="checkbox" name="" id="study3"><label for="study3">강의전화</label>
+                                <input type="checkbox" name="" id="study4"><label for="study4">영어</label>
+                                <input type="checkbox" name="" id="study5"><label for="study5">책유학</label>
+                            </p>
+                        </li>
+                        <li class="label">
+                            <strong>영어 학습경험</strong>
+                            <p>
+                                <input type="checkbox" name="" id="label1"><label for="label1">영어</label>
+                                <input type="checkbox" name="" id="label2"><label for="label2">학원온라인</label>
+                                <input type="checkbox" name="" id="label3"><label for="label3">강의전화</label>
+                                <input type="checkbox" name="" id="label4"><label for="label4">영어</label>
+                                <input type="checkbox" name="" id="label5"><label for="label5">책유학</label>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="subject">개인정보 수집 및 이용 동의</p>   
+                    <div class="agreebox">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">동의합니다.</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" value="상담 신청하기">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
