@@ -26,28 +26,67 @@
             height: 20px;
             background-color: yellow;
             transition: width 0.5s;
+            transition-delay: 1.5s;
         }
         .box:hover:after{
             width: calc(100% + 40px);
+            transition-delay: 0s;
         } 
         .box:before{
             content: "";
             position: absolute;
-            right: -20px;;
+            right: -20px;
             top: -20px;
             height: 0;
             width: 20px;
             background-color: yellow;
             transition: height 0.5s;
-            transition-delay: 0.5s;
+            transition-delay: 1s;
         }
         .box:hover:before{
             height: calc(100% + 40px);
+            transition-delay: 0.5s;
+        }
+        .inbox{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .inbox:before,
+        .inbox:after{
+            content: "";
+            position: absolute;
+            background-color: orange;
+            transition: 0.5s;
+        }
+        .inbox:before{
+            right: -20px;
+            bottom: -20px;
+            height: 20px;
+            width: 0;
+            transition-delay: 0.5s;
+        }
+        .inbox:after{
+            left: -20px;
+            bottom: -20px;
+            height: 0;
+            width: 20px;
+        }
+        .box:hover .inbox:before{
+            width:calc(100% + 40px);
+            transition-delay: 1s;
+        }
+        .box:hover .inbox:after{
+            height:calc(100% + 40px);
+            transition-delay: 1.5s;
         }
     </style>
 </head>
 <body>
     <div class="box">
+        <div class="inbox">
+
+        </div>
 
     </div>
 </body>
